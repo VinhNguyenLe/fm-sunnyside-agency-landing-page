@@ -1,0 +1,236 @@
+@media (max-width: 600px){
+
+    .header{
+        background-image: url('../images/mobile/image-header.jpg');
+    }
+    .header__navbar{
+        position: unset;
+        margin: unset;
+    }
+
+    .header__logo{
+        margin-top: 0;
+        margin-left: 16px;
+    }
+
+    .header__menu{
+        /* display: none; */
+        /* display: flex; */
+        position: absolute;
+        flex-direction: column;
+        top: 100px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 2px;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__menu::after{
+        content: '';
+        border-left: 20px solid transparent;   
+        border-top: 20px solid transparent;
+        border-right: 20px solid var(--white);    
+        border-bottom: 20px solid var(--white);
+        position: absolute;
+        top: -35px;
+        right: 0px;
+        box-shadow: 2px 0 2px -2px #888;
+    }
+
+    .header__menu a{
+        color: rgb(90, 99, 108);
+        margin: 12px 0;
+        font-weight: 500;
+        outline: unset;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .header__menu a:last-child{
+        background-color: var(--yellow);
+        margin-top: 12px;
+    }
+
+    .header__title{
+        font-size: 16px;
+        top: 35%;
+    }
+
+    .service__item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .down-posision{
+        width: 100%;
+    }
+
+    .service__item:nth-child(2){
+        background-image: url('../images/mobile/image-transform.jpg');
+    }
+    
+    .service__item:nth-child(3){
+        background-image: url('../images/mobile/image-stand-out.jpg');
+    }
+    
+    .service__item:nth-child(5){
+        background-image: url('../images/mobile/cherry.jpg');
+    }
+    
+    #service .service__item:nth-child(6){
+        background-image: url('../images/mobile/orange.jpg');
+    }
+
+    .service__item--300{
+        height: 300px;
+    }
+
+    .service__item--450{
+        height: 450px;
+    }
+
+    .service__item-wrap{
+        padding: 8px;
+    }
+
+    .service__item--700{
+        height: 700px;
+    }
+
+    .service__item-note{
+        transform: translateX(0);
+    }
+
+    .order-1{
+        order: 1;
+    }
+
+    .order-2{
+        order: 2;
+    }
+
+    .order-3{
+        order: 3;
+    }
+
+    .order-4{
+        order: 4;
+    }
+
+    .order-5{
+        order: 5;
+    }
+
+    .order-6{
+        order: 6;
+    }
+
+    .about__members{
+        flex-direction: column;
+    }
+
+    .about__member{
+        width: 100%;
+        margin: 0;
+    }
+
+    .about__title{
+        margin-top: 18%;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .member__text{
+        margin: 0 12px 22px;
+    }
+
+    .member__name{
+        margin-bottom: 20px;
+    }
+    .member__image{
+        margin: 48px;
+    }
+
+    .member__job{
+        margin-bottom: 40px;
+    }
+
+    #project{
+        margin-top: 40px;
+        flex-wrap: wrap;
+        /* height: 100vh; */
+    }
+    
+    .project__img{
+        width: 50%;
+        height: 250px;
+    }
+
+    .project__img img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .footer__items{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .attribution__span{
+        display: block;
+    }
+
+}
+
+
+
+@media (min-width: 601px) {
+
+    .header__button{
+        display: none;
+    }
+
+    .header__menu{
+        display: flex;
+        float: right;
+        width: 33.33333%;
+    }
+
+    
+    .header__menu a{
+        padding: 0 4px;
+        font-weight: 600;
+        transition: 0.4s;
+    }
+
+    .header__menu a:hover{
+        opacity: 0.8;
+    }
+
+    .header__menu a:last-child{
+        background-color: var(--white);
+    }
+
+    .about__title{
+        margin: 95px 0 10px;
+    }
+
+    .member__name{
+        margin-bottom: 16px;
+
+    }
+
+    .project__img{
+        height: 470px;
+    }
+
+    .footer__items a{
+        margin: 0 24px;
+    }
+
+    .footer__items a:hover, .footer__icons a:hover img{
+        opacity: 0.8;
+    }
+}
